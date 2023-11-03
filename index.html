@@ -1,57 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--Name of Page-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Briana Truong's Portfolio
     </title>
 </head>
+
+
 <body>
-<figure>
+<header>
+    <h1 id="header">Welcome!
+    </h1>
+
+<!--My Logo-->
+<img>
     <img src="./images/Logo.png"
     height="50"
     width="auto"
-    alt="Personal Logo reading Briana in stylistic font"
+    alt="Personal Logo reading 'Briana' in stylistic font"
     />
-</figure>    
-<header>
-    <h1>Welcome!</h1>
+</img>
+<!--Navigation-->
     <nav>
-        <ul>
+        <ul type="circle">
             <li><a href="#biography">Biography</a></li>
             <li><a href="#collection">Portfolio Collection</a></li>
             <li><a href="#contact">Contact Information</a></li>
         </ul>
     </nav>
 </header>
+
+
 <main>
 <article>
     <section id="biography">
         <h2>Biography</h2>
-            <p>My name is Briana. I am currently a student at SAIT for UX Design.</p>
+            <p>My name is Briana Truong. Find out more about me below.</p>
+        <hr />
+            <h3>Education</h3>
+                <dl>
+                    <dt><b>University of Calgary (2023)</b></dt>
+                    <dd>Bachelor of Commerce with a Major in Organizational Behaviour and Human Resources<dd> 
+                    <dt><b>Southern Alberta Institute of Technology (2025)</b></dt>
+                    <dd>User Experience (UX) Diploma</dd>
+                </dl>
+        <hr />
+            <h3>Hobbies</h3>
+            <ol type="i">
+                <li>Noobie Film Photographer</li>
+                <li>Even Noobier League of Legends Player</li>
+                <li>Pro Avid Korean Drama Watcher</li>
+            </ol>
     </section>
     <section id="collection">
         <h2>Portfolio Collection</h2>
-            <p>This is my work.</p>
-            <dl>
-            <dt><b>DSGN 228</b></dt>
-            <dd>Introduction to Visual Communication<dd> 
-            </dl>    
+            <table border="1">
+                <thead>
+                <tr>
+                    <th>DSGN 228</th>
+                    <th>CPRG 219</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th><a href="#dsgn228work">Work</a></th>
+                    <th><a href="#cprg219work">Work</a></th>
+                </tr>
+                <caption></caption>
+            </tbody>
+            </table>
     </section>
     <section id="contact">
         <h2>Contact Information</h2>
-            <p>Drop a line.
+            <p>Find out more about me and to contact me via <a href="https://www.linkedin.com/in/briana-truong/">LinkedIn</a>.
             </p>
+
     </section>
 </article>
 </main>
 
+<section id="dsgn228work">
+    <h3>DSGN 228: Introduction to Visual Communication</h3>
+    <h4>Assignment 3: Portfolio Collection</h4>
+    <figure>
+        <img src="./images/Design 1-01.png"
+        width="250"
+        height="auto"
+        alt="Adobe Illustrator paper style design made with traditional Chinese art elements of a window with a crescent moon night sky with mountains and a lake, between 2 brown frames, encapsulated in a red flower border with pink cherry blossoms floating all across the frame.">
+        <figcaption><i>Flower Window</i></figcaption>
+    </figure>
+    <figure>
+        <img src="./images/Design 2-01.png"
+        width="250"
+        height="auto"
+        alt="Adobe Illustrator paper style design made with traditional Chinese art elements of a sleeping white bunny on a crescent moon with 2 red paper lanterns hanging on the right, encapsulated by a a round brown frame.">
+        <figcaption><i>Sleeping Rabbit on the Moon</i></figcaption>
+    </figure>
+    <figure>
+        <img src="./images/Design 3-01.png"
+        width="250"
+        height="auto"
+        alt="Adobe Illustrator paper style design made with traditional Chinese art elements of a tan rectangular frame, inside is a mountain landscape and the sun rising behind it, a cherry blossom tree peaking from the left, a small red boat to the right, and a brown frame on the lower bottom.">
+        <figcaption><i>Mountain Landsape</i></figcaption>
+    </figure>
+   </ol>
+</section>
 
-
+<section id="cprg219work">
+    <h3>CPRG 219: Introduction to Web Communications</h3>
+    <p>Check out my <a href="https://github.com/btrizzzy">Github</a>.</p>
+</section>
 </body>
 <footer>
-    &copy; Briana Truong, 2023
+    <small>
+    &copy; 2023 Briana Truong
+    <p>Back to <a href="#header">Top</a></p>
+    </small>
 </footer>
 
+  
 
 </html>
