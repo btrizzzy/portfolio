@@ -1,0 +1,197 @@
+html {
+    font-size: 62.5%;
+    color: white;
+}
+a {
+    color: #efd310;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    background-color: #2F2D2E;
+}
+
+  
+h2, h3, h4, h5 {
+    font: size 3vh;
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: 700;
+}
+
+header {
+    position: static;
+    margin-bottom: 3em;
+}
+
+.hero-image {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/ferry.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.hero-text {
+    font-size: 5vh;
+    font-family: Futura, serif;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #efd310;
+}
+
+
+nav ul {
+    font-family: 'Sulphur Point', sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    position: absolute;
+    width: 100%
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 1em;
+}
+
+nav ul li a:hover {
+    color: white;
+    border-radius: 5px;
+    background-color: #efd310;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+section#biography {
+    margin: auto;
+    width: 85%;
+    background-color: #d8c7b3;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2em;
+    margin-bottom: 5em;
+}
+
+#biography ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.action-item {
+    background-image: url(./images/emoticon.png);
+    background-position: -4px 2px;
+    background-repeat: no-repeat;
+    background-size: 1.4em;
+}
+
+table, thead, tr, tbody {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+    border-collapse: collapse;
+}
+thead {
+    font-family: 'Sulphur Point', sans-serif;
+    color: black;
+}
+tbody tr:hover {background-color: #899ea5;}
+
+
+div.gallery {
+    width: fit-content;
+    border: 1px solid white;
+    border-radius: 0 0 10px 10px;
+
+  }
+
+  div.gallery:hover {
+    border: 2px solid #899ea5;
+    color: #efd310;
+  }
+
+  div.gallery img {
+    width: auto;
+    height: 290px;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive{
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive{
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    display: grid;
+    background-color: lightgray;
+    padding: 2em;
+    grid-area:
+        1fr 1fr
+        1fr 1fr 
+        2fr;
+}
+
+
+
+::selection {
+    background-color: #efd310;
+}
+
+/* comment hehe */
+

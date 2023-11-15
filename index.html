@@ -5,107 +5,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Briana Truong's Portfolio</title>
+    <link href="./styles/base.css" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display&family=Sulphur+Point:wght@300;700&display=swap" rel="stylesheet">    <title>Briana Truong</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 
 <body>
 <header>
-    <h1 id="header">Salutations!</h1>
-<!--My Logo-->
-<img 
-    src="./images/Logo.png"
-    height="50"
-    width="200"
-    alt="Personal Logo reading 'Briana' in stylistic and all capital font">
 <!--Navigation-->
-<nav>
+<nav class="navbar">
     <ul>
-        <li><a href="#biography">Biography</a></li>
-        <li><a href="#collection">Portfolio Collection</a></li>
-        <li><a href="#contact">Contact Information</a></li>
+        <li><a href="#biography">BIOGRAPHY</a></li>
+        <li><a href="#collection">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT ME</a></li>
     </ul>
 </nav>
+<!--Hero Image-->
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Welcome Besties</h1>
+    </div>
+</div>
+<!--My Logo
+<img 
+src="./images/girl.webp"
+height="50"
+width="50"
+alt="Personal Logo reading 'Briana' in stylistic and all capital font"
+align="left">-->
+
 </header>
+
+
 
 <!--Biography-->
 <section id="biography">
-    <h2>About Me</h2>
+    <h2>ABOUT ME</h2>
         <p>My name is Briana Truong. Find out more about me below :)</p>
 <hr>
     <!--School-->
     <h3>Education</h3>
-        <dl>
-            <dt><b>University of Calgary (2023)</b></dt>
-            <dd>Bachelor of Commerce with a Major in Organizational Behaviour and Human Resources<dd> 
-            <dt><b>Southern Alberta Institute of Technology (2025)</b></dt>
-            <dd>User Experience (UX) Diploma</dd>
-        </dl>
+    <table>
+        <thead>
+            <th>School</th>
+            <th>Degree</th>
+        </thead>
+        <tbody>
+        <tr>
+            <th>Southern Alberta Institute of Technology (2025)</th>
+            <th>User Experience (UX) Diploma</th>
+        </tr>
+        <tr>
+            <th>University of Calgary (2023)</th>
+            <th>Bachelor of Commerce - Major in Organizational Behaviour and Human Resources</th>
+        </tr>
+        </tbody>
+    </table>
 <hr>
     <!--Hobbies-->
     <h3>Hobbies</h3>
-        <ol type="i">
-            <li>Noobie Film Photographer</li>
-            <li>Even Noobier League of Legends Player</li>
-            <li>Pro Avid Korean Drama Watcher</li>
+        <ol>
+            <li class="action-item"><a href="film">Film<a></a> Photography</li>
+            <li class="action-item"><a href="https://www.twitch.tv/btrizzzy">League of Legends</a></li>
+            <li class="action-item">Korean Drama Watcher</li>
         </ol>
 </section>
 
 <!--My Work-->
 <section id="collection">
-    <h2>Portfolio Collection</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>DSGN 228</th>
-                <th>CPRG 219</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th><a href="#dsgn228work">Work</a></th>
-                <th><a href="#cprg219work">Work</a></th>
-            </tr>
-            </tbody>
-        </table>
+    <h2>PORTFOLIO COLLECTION</h2>
+    <p>This is where I'm figuring out what my style is and test what I am capable of.</p>
 </section>
 
 <!--DSGN Page-->
+
 <section id="dsgn228work">
     <h3>DSGN 228: Introduction to Visual Communication</h3>
     <h4>Assignment 3: Portfolio Collection</h4>
-        <figure>
-            <img src="./images/Design1-01.png"
-            width="250"
-            height="250"
-            alt="Adobe Illustrator paper style design made with traditional Chinese art elements of a window with a crescent moon night sky with mountains and a lake, between 2 brown frames, encapsulated in a red flower border with pink cherry blossoms floating all across the frame.">
-            <figcaption><i>Flower Window</i></figcaption>
-        </figure>
-        <figure>
-            <img src="./images/Design2-01.png"
-            width="250"
-            height="200"
-            alt="Adobe Illustrator paper style design made with traditional Chinese art elements of a sleeping white bunny on a crescent moon with 2 red paper lanterns hanging on the right, encapsulated by a a round brown frame.">
-            <figcaption><i>Sleeping Rabbit on the Moon</i></figcaption>
-        </figure>
-        <figure>
-            <img src="./images/Design3-01.png"
-            width="250"
-            height="300"
-            alt="Adobe Illustrator paper style design made with traditional Chinese art elements of a tan rectangular frame, inside is a mountain landscape and the sun rising behind it, a cherry blossom tree peaking from the left, a small red boat to the right, and a brown frame on the lower bottom.">
-            <figcaption><i>Mountain Landsape</i></figcaption>
-        </figure>
+        <div class="lineup">
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="./images/Design1-01.png" alt="Adobe Illustrator paper style design made with traditional Chinese art elements of a window with a crescent moon night sky with mountains and a lake, between 2 brown frames, encapsulated in a red flower border with pink cherry blossoms floating all across the frame.">
+                    <div class="desc">Flower Window</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="./images/Design2-01.png" alt="Adobe Illustrator paper style design made with traditional Chinese art elements of a sleeping white bunny on a crescent moon with 2 red paper lanterns hanging on the right, encapsulated by a a round brown frame.">
+                    <div class="desc">Sleepy Rabbit on the Moon</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="./images/Design3-01.png" alt="Adobe Illustrator paper style design made with traditional Chinese art elements of a tan rectangular frame, inside is a mountain landscape and the sun rising behind it, a cherry blossom tree peaking from the left, a small red boat to the right, and a brown frame on the lower bottom.">
+                    <div class="desc">Mountain Landscape</div>
+                </div>
+            </div>  
+        </div>      
+<div class="clearfix"></div>
 </section>
 
 <!--CPRG Page-->
-<section id="cprg219work">
+<div class="row">
+<section class="column" id="cprg219work">
     <h3>CPRG 219: Introduction to Web Communications</h3>
-    <p>Check out my <a href="https://github.com/btrizzzy">Github</a>.</p>
+    <p>HTML, CSS, and (upcoming JavaScript) on <a href="https://github.com/btrizzzy">Github</a>.</p>
 </section>
-
+<!--Film-->
+<section class="column" id="film">
+    <h3>Film Photography</h3>
+    <h4>Landscapes</h4>
+    <h5>Hong Kong 2022</h5>
+</section>
+</div>
 <!--Contact Info-->
 <section id="contact">
-    <h2>Contact Information</h2>
+    <h2>CONTACT INFORMATION</h2>
         <p>Find out more about me and to contact me via <a href="https://www.linkedin.com/in/briana-truong/">LinkedIn</a>.</p>
 </section>
 
@@ -113,6 +129,10 @@
     <small>
     &copy; 2023 Briana Truong. All rights reserved.
     </small>
+        <ul>
+            <li><a href="">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/briana-truong/">LinkedIn</a></li>
+        </ul>
 </footer>
 </body>
 
