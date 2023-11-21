@@ -19,6 +19,7 @@ h2, h3, h4, h5 {
     font: size 3vh;
     font-family: 'Sulphur Point', sans-serif;
     font-weight: 700;
+    text-align: center;
 }
 
 header {
@@ -71,30 +72,11 @@ nav ul li a:hover {
     background-color: #efd310;
 }
 
-.column {
-    float: left;
-    width: 50%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
 
 section#biography {
     margin: auto;
     width: 85%;
     background-color: #d8c7b3;
-    text-align: center;
     border-radius: 10px;
     padding: 2em;
     margin-bottom: 5em;
@@ -106,12 +88,6 @@ section#biography {
     margin: 0;
 }
 
-.action-item {
-    background-image: url(./images/emoticon.png);
-    background-position: -4px 2px;
-    background-repeat: no-repeat;
-    background-size: 1.4em;
-}
 
 table, thead, tr, tbody {
     margin: auto;
@@ -126,26 +102,25 @@ thead {
 }
 tbody tr:hover {background-color: #899ea5;}
 
-
 div.gallery {
-    width: fit-content;
-    border: 1px solid white;
-    border-radius: 0 0 10px 10px;
-
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 0 0 15px 15px;
+    float: left;
+    width: 250px;
   }
-
+  
   div.gallery:hover {
-    border: 2px solid #899ea5;
-    color: #efd310;
+    border: 1px solid #efd310;
   }
-
+  
   div.gallery img {
-    width: auto;
-    height: 290px;
+    width: 100%;
+    height: auto;
   }
-
+  
   div.desc {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
   }
 
@@ -159,22 +134,16 @@ div.gallery {
     width: 24.99999%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 10 00px) {
     .responsive{
         width: 49.99999%;
-        margin: 6px 0;
+        margin: px 0;
     }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .responsive {
         width: 100%;
     }
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 footer {
