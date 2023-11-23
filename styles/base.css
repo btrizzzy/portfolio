@@ -146,6 +146,19 @@ footer ul {
     text-align: end;
 }
 
+/* mobile phone only */
+@media only screen and (max-width:600px) {
+    h2 {
+        font-size: 5vh;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    .hero-text {
+        font-size: 7vw;
+    }
+}
+
 /*pseudo stuff */
 ::selection {
     background-color: #A85400;
