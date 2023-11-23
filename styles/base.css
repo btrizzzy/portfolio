@@ -20,7 +20,7 @@ body {
     background-color:#374838;
 }
 
-  
+/*HEADER FONTS*/  
 h2 {
     font-family: 'Yeseva One', serif;
     color: #CDC1B7;
@@ -42,11 +42,12 @@ header {
     background-position: ;
 }
 
-
+/*HERO*/
 .hero-image {
     width: auto;
     height: 100vh;
 }
+
 
 .hero-text {
     font-size: 7vw;
@@ -102,7 +103,7 @@ nav ul li a:hover {
     text-align: center;
 }
 
-
+/*education*/
 table, thead, tr, tbody {
     margin: auto;
     text-align: center;
@@ -123,7 +124,7 @@ th a:hover {
     color: #A85400;
 }
 
-
+/* gallery */
 div.scroll-container {
     overflow: auto;
     white-space: nowrap;
@@ -140,9 +141,14 @@ div.scroll-container {
     border: 2px solid #A85400;
   }
 
+/*responsiveness of scroll container*/
+@media screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    .scroll-container {
+        flex-direction: column;
+        align-items: center;
 
-
-
+/*feet stuff */
 footer {
     background-color:#524B32;
     display: grid;
@@ -162,10 +168,9 @@ footer ul {
     grid-column: end;
 }
 
-
+/*pseudo stuff */
 ::selection {
     background-color: #A85400;
 }
 
-/* comment hehe */
 
