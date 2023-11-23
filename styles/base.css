@@ -1,91 +1,105 @@
 html {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 62.5%;
     color: white;
+    text-align: center;
 }
 a {
-    color: #efd310;
+    color: #936945;
     text-decoration: none;
 }
+
+a:hover {
+    color: #CDC1B7;
+}
+
 body {
     margin: 0;
     width: 100%;
-    font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
-    background-color: #2F2D2E;
+    background-color:#374838;
 }
 
   
-h2, h3, h4, h5 {
+h2 {
+    font-family: 'Yeseva One', serif;
+    color: #CDC1B7;
+    font-size: 7vh;
+    text-align: right;
+}
+
+ h3, h4, h5 {
     font: size 3vh;
-    font-family: 'Sulphur Point', sans-serif;
     font-weight: 700;
     text-align: center;
 }
 
-header {
-    position: static;
-    margin-bottom: 3em;
+h3 {
+    color:#A85400;
 }
 
+header {
+    background-position: ;
+}
+
+
 .hero-image {
-    width: 100vw;
+    width: auto;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/ferry.JPG");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+}
 
 .hero-text {
-    font-size: 5vh;
-    font-family: Futura, serif;
+    font-size: 7vw;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #efd310;
+    color: #9BB6B5;
 }
 
+.hero-text p {
+    color: white;
+    letter-spacing: 0.5em;
+    margin: -5em;
+    font-size: 1.5vw;
+}
 
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* Navigation Bar */
 nav ul {
-    font-family: 'Sulphur Point', sans-serif;
+    margin-top: 0;
     list-style: none;
     display: flex;
-    justify-content:space-around;
-    position: absolute;
-    width: 100%
+    width: 100%;
 }
 
 nav ul li a {
+    margin: auto;
+    color: white; 
+    text-align: center;
     display: inline-block;
     padding: 1em;
 }
 
 nav ul li a:hover {
-    color: white;
-    border-radius: 5px;
-    background-color: #efd310;
+    color: #CDC1B7;
 }
 
-
-section#biography {
+/* About ME */
+#biography {
+    background-color: #9BB6B5;
+    width: auto;
     margin: auto;
-    width: 85%;
-    background-color: #d8c7b3;
-    border-radius: 10px;
     padding: 2em;
-    margin-bottom: 5em;
 }
-
-#biography ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+#biography ol li {
+    list-style-position: inside;
+    text-align: center;
 }
 
 
@@ -97,69 +111,60 @@ table, thead, tr, tbody {
     border-collapse: collapse;
 }
 thead {
-    font-family: 'Sulphur Point', sans-serif;
-    color: black;
-}
-tbody tr:hover {background-color: #899ea5;}
+    color: #524B32;
 
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    border-radius: 0 0 15px 15px;
-    float: left;
-    width: 250px;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #efd310;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
+}
+
+tbody tr:hover {
+    background-color: #CDC1B7;
+}
+
+th a:hover {
+    color: #A85400;
+}
+
+
+div.scroll-container {
+    overflow: auto;
+    white-space: nowrap;
     padding: 10px;
-    text-align: center;
+  }
+  
+  div.scroll-container img {
+    padding: 5px;
+    width: auto;
+    height: 500px;
   }
 
-* {
-    box-sizing: border-box;
-}
+  div.scroll-container:hover img {
+    border: 2px solid #A85400;
+  }
 
-.responsive{
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-}
 
-@media only screen and (max-width: 10 00px) {
-    .responsive{
-        width: 49.99999%;
-        margin: px 0;
-    }
-}
-@media only screen and (max-width: 700px) {
-    .responsive {
-        width: 100%;
-    }
-}
+
 
 footer {
+    background-color:#524B32;
     display: grid;
-    background-color: lightgray;
     padding: 2em;
     grid-area:
         1fr 1fr
         1fr 1fr 
         2fr;
 }
+footer small {
+    text-align: start;
+}
 
+footer ul {
+    list-style: none;
+    text-align: end;
+    grid-column: end;
+}
 
 
 ::selection {
-    background-color: #efd310;
+    background-color: #A85400;
 }
 
 /* comment hehe */
