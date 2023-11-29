@@ -159,7 +159,26 @@ footer ul {
     }
 }
 
-/*pseudo stuff */
+/* pseudo stuff */
 ::selection {
     background-color: #A85400;
+}
+
+
+/* js */
+
+#btn-alrt {
+    background-color: transparent;
+    color: #CDC1B7;
+    display:inline-flex;
+    margin-top: 15vh;
+    padding: 10px;
+}
+
+.even {
+    color: #A85400;
+}
+
+.odd {
+ color: #9BB6B5;
 }
