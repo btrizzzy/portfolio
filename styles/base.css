@@ -165,14 +165,26 @@ footer ul {
 }
 
 
-/* js */
+/* with js additions */
+
+#jslab ul li p {
+    list-style: none;
+}
 
 #btn-alrt {
     background-color: transparent;
     color: #CDC1B7;
-    display:inline-flex;
-    margin-top: 15vh;
+    margin: auto;
     padding: 10px;
+}
+
+#numbers {
+    border: 2px solid #A85400;
+    display:flexbox;
+    margin: auto;
+    width: 150px;
+    height: 100px;
+    overflow: scroll;
 }
 
 .even {

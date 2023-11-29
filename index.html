@@ -29,7 +29,6 @@
     <div class="hero-text">
         <h1>張家銘</h1>
         <p>Briana Truong</p>
-        <button id="btn-alrt">Daily Affirmation</button>
     </div>
 </div>
 
@@ -89,6 +88,7 @@
 <!--CPRG Page-->
 <section id="cprg219">
     <h3>CPRG 219: Introduction to Web Communications</h3>
+ 
         <p>I've done some work with:
     <br>
         <span class="material-symbols-outlined">html</span>
@@ -97,7 +97,14 @@
     <br>
         <span class="material-symbols-outlined">javascript</span>
     <br>
-Check it out on <a href="https://github.com/btrizzzy">Github</a></p>
+Check it out on here and on <a href="https://github.com/btrizzzy">Github</a></p>
+<h4>Lab: Using JavaScript to Enhance a Web Page</h4>
+<ul id="jslab">
+    <li><p>Creating a Hover & Alert Button:</p><button id="btn-alrt">Daily Affirmation</button></li>
+    <li><p>Changing the Number Colour with an Incrementing Button:</p><p id="txt-counter">0</p><button id="btn-counter">+</button></li>
+    <li><p>Creating an Ordered List with 100 Child Elements Using a for Loop:</p><ol id="numbers"></ol></li>
+    <li><p>Using the Date() Function for Changing the Copyright Year in the <a href="#footy">Footer</a></p>
+</ul>
 </section>
 
 <!--Contact Info-->
@@ -111,15 +118,12 @@ Check it out on <a href="https://github.com/btrizzzy">Github</a></p>
 
 </section>
 
-<footer>
-    <small>
-    &copy; <p id="currentyear"></p> Briana Truong. All rights reserved.
-    </small>
+<footer id="footy">
+    <small><p id="currentyear"></p></small>
     <ul>
         <li><a href="https://twitch.ctv/btrizzzy">Twitch</a></li>
         <li><a href="https://www.instagram.com/megatruong/?hl=en">Instagram</a></li>
         <li><a href="https://twitter.com/btrizzzy">Twitter</a></li>
-        <li><p>New Followers: </p><p id="txt-counter">0</p><button id="btn-counter">+</button></li>
     </ul>
 </footer>
 </body>

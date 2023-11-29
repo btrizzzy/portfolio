@@ -30,7 +30,16 @@ document.getElementById('btn-counter').onclick = () => {
     }
 }
 
+/* for Loop - Even/Odd Ordered List */
+
+for (let i = 1; i <= 100; i++) {
+    const listItem = document.createElement('li')
+    listItem.textContent = i % 2 === 0 ? 'Even' : 'Odd' ;
+    document.getElementById('numbers').appendChild(listItem);
+}
+
+
 /* Changing Copyright Year */
 const date = new Date();
 let year = date.getFullYear();
-document.getElementById('currentyear').innerHTML = year;
+document.getElementById('currentyear').innerHTML = '&copy; ' + year + ' Briana Truong. All rights reserved.';
