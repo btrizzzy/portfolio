@@ -167,10 +167,10 @@ footer ul {
 
 /* with js additions */
 
-#jslab ul li p {
+#jslab {
     list-style: none;
+    padding: 0;
 }
-
 #btn-alrt {
     background-color: transparent;
     color: #CDC1B7;
@@ -187,6 +187,9 @@ footer ul {
     overflow: scroll;
 }
 
+#currentyear {
+    font-size:smaller;
+}
 .even {
     color: #A85400;
 }

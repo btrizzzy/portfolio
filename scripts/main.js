@@ -1,32 +1,37 @@
 /* Alert Button - Inspo Msg */
-document.getElementById('btn-alrt').onclick = () => {
+const btnAlert = document.getElementById('btn-alrt')
+
+btnAlert.onclick = () => {
     alert('You are doing the best you can and that is enough :)');
 }
 
 /* try to refactor to be more efficient */
 /* Hover to Change Button */
-document.getElementById('btn-alrt').onmouseover = () => {
-    document.getElementById('btn-alrt').innerText = '!!!!!!!!!!!!!!!!!!!!!!!!!!';
+
+btnAlert.onmouseover = () => {
+    btnAlert.innerText = '!!!!!!!!!!!!!!!!!!!!!!!!!!';
 }
-document.getElementById('btn-alrt').onmouseleave = () => {
-    document.getElementById('btn-alrt').innerText = 'Daily Affirmation';
+btnAlert.onmouseleave = () => {
+    btnAlert.innerText = 'Daily Affirmation';
 }
 
 /* Incrementing Button - Fake Followers */
 let count = 0;
+const btnCounter = document.getElementById('btn-counter')
+const txtCounter = document.getElementById('txt-counter')
 
-document.getElementById('btn-counter').onclick = () => {
+btnCounter.onclick = () => {
     count = count + 1;
-    document.getElementById('txt-counter').innerHTML = count;
+    txtCounter.innerHTML = count;
     /* Change Text Colour Odd/Even - (if-else) */
     if (count % 2 === 0) {
-        document.getElementById('txt-counter').classList.add('even');
-        document.getElementById('txt-counter').classList.remove('odd');
+        txtCounter.classList.add('even');
+        txtCounter.classList.remove('odd');
     }
 
     else {
-        document.getElementById('txt-counter').classList.add('odd');
-        document.getElementById('txt-counter').classList.remove('even');
+        txtCounter.classList.add('odd');
+        txtCounter.classList.remove('even');
     }
 }
 
