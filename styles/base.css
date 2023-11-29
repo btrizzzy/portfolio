@@ -3,6 +3,7 @@ html {
     font-size: 62.5%;
     color: white;
     text-align: center;
+    overflow-x: hidden;
 }
 a {
     color: #936945;
@@ -26,6 +27,7 @@ h2 {
     color: #CDC1B7;
     font-size: 7vh;
     text-align: right;
+    margin-right: 2vw;
 }
 
  h3, h4, h5 {
@@ -172,14 +174,29 @@ footer ul {
     padding: 0;
 }
 #btn-alrt {
-    background-color: transparent;
-    color: #CDC1B7;
-    margin: auto;
+    background-color: #9BB6B5;
+    border: 2px outset #A85400;
+    color: #524B32;
     padding: 10px;
 }
 
+#btn-counter {
+    font-size: larger;
+    background-color: #524B32;
+    color: #A85400;
+    border: 2px groove #936945;
+}
+.even {
+    color: #A85400;
+}
+
+.odd {
+ color: #9BB6B5;
+}
+
 #numbers {
-    border: 2px solid #A85400;
+    border: 2px inset #9BB6B5;
+    background-color: #936945;
     display:flexbox;
     margin: auto;
     width: 150px;
@@ -188,12 +205,5 @@ footer ul {
 }
 
 #currentyear {
-    font-size:smaller;
-}
-.even {
-    color: #A85400;
-}
-
-.odd {
- color: #9BB6B5;
+    font-size: smaller;
 }
