@@ -5,9 +5,8 @@ btnAlert.onclick = () => {
     alert('You are doing the best you can and that is enough :)');
 }
 
-/* try to refactor to be more efficient */
-/* Hover to Change Button */
 
+/* Hover to Change Button */
 btnAlert.onmouseover = () => {
     btnAlert.innerText = '!!!!!!!!!!!!!!!!!!!!!!!!!!';
 }
@@ -28,7 +27,6 @@ btnCounter.onclick = () => {
         txtCounter.classList.add('even');
         txtCounter.classList.remove('odd');
     }
-
     else {
         txtCounter.classList.add('odd');
         txtCounter.classList.remove('even');
@@ -38,13 +36,20 @@ btnCounter.onclick = () => {
 /* for Loop - Even/Odd Ordered List */
 
 for (let i = 1; i <= 100; i++) {
-    const listItem = document.createElement('li')
-    listItem.textContent = i % 2 === 0 ? 'Even' : 'Odd' ;
-    document.getElementById('numbers').appendChild(listItem);
+    let listItem = document.createElement('li')
+    if (i % 2 === 0) {
+        listItem.textContent = 'Even'
+    }
+    else {
+        listItem.textContent = 'Odd'
+    }
+    document.getElementById('numberlist').appendChild(listItem);
 }
 
 
 /* Changing Copyright Year */
-const date = new Date();
+const currentYear = document.getElementById('currentyear')
+let date = new Date();
 let year = date.getFullYear();
-document.getElementById('currentyear').innerHTML = '&copy; ' + year + ' Briana Truong. All rights reserved.';
+
+currentYear.innerHTML = '&copy; ' + year + ' Briana Truong. All rights reserved.';
